@@ -1,0 +1,1427 @@
+//////////////JAVA SCRIPT QUESTIONS//////////////////////////
+JavaScript is the world's most popular programming language.
+JavaScript is the programming language of the Web.
+JavaScript is Case Sensitive
+===>JavaScript OUTPUT:--
+JavaScript in <head> or <body>
+
+1.Writing into an HTML element, using innerHTML.
+2.Writing into the HTML output using document.write().
+3.Writing into an alert box, using window.alert().
+4.Writing into the browser console, using console.log().
+
+===>JavaScript VALUES:--
+The JavaScript syntax defines two types of values:
+
+1.Fixed values(LITERALS)
+2.Variable values(VARIABLES)
+
+Fixed values are called LITERALS.
+
+LITERALS:-
+
+Variable values are called VARIABLES.
+
+VARIABLES:-
+(In a programming language, variables are used to store data values.
+
+JavaScript uses the keywords var, let and const to declare variables.
+
+An equal sign is used to assign values to variables)
+
+===>JavaScript VARIABLES:--
+Variables are containers for storing data (values).
+All JavaScript variables must be identified with unique names.
+These unique names are called identifiers.
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+The general rules for constructing names for variables (unique identifiers) are:
+JavaScript identifiers are case-sensitive.
+
+There are 3 ways to declare a JavaScript variable:
+
+1.Using VAR
+Variables defined with var have Functional Scope.
+
+2.Using LET
+The let keyword was introduced in ES6 (2015).
+Variables defined with let cannot be Redeclared.
+Variables defined with let must be Declared before use.
+Variables defined with let have Block Scope.
+
+3.Using CONST
+The const keyword was introduced in ES6 (2015).
+Variables defined with const cannot be Redeclared.
+Variables defined with const cannot be Reassigned.
+Variables defined with const have Block Scope.
+
+===>JavaScript OPERATORS:--
+
+1.JavaScript ARITHMETIC Operators;-
+
+Arithmetic operators are used to perform arithmetic on numbers:
+
+Operator	Description
+
++			Addition
+-			Subtraction
+*			Multiplication
+**			Exponentiation (ES2016)
+/			Division
+%			Modulus (Division Remainder)
+++			Increment
+--			Decrement
+
+2.JavaScript ASSIGNMENT Operators;-
+
+Assignment operators assign values to JavaScript variables.
+
+Operator	Example		Same As
+
+=			x = y		x = y
++=			x += y		x = x + y
+-=			x -= y		x = x - y
+*=			x *= y		x = x * y
+/=			x /= y		x = x / y
+%=			x %= y		x = x % y
+**=			x **= y		x = x ** y
+
+3.JavaScript COMPARISON Operators;-
+
+Operator	Description
+
+==			equal to
+===			equal value and equal type
+!=			not equal
+!==			not equal value or not equal type
+>			greater than
+<			less than
+>=			greater than or equal to
+<=			less than or equal to
+?			ternary operator
+
+4.JavaScript TYPE Operators;-
+
+Operator	Description
+
+typeof		Returns the type of a variable
+instanceof	Returns true if an object is an instance of an object type
+
+5.JavaScript BITWISE Operators;-
+
+Bit operators work on 32 bits numbers.
+
+Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.
+
+Operator	Description				Example			Same as	Result			Decimal
+
+&			AND						5 & 1			0101 & 0001	0001		 1
+|			OR						5 | 1			0101 | 0001	0101		 5
+~			NOT						~ 5	 			~0101	1010	 		10
+^			XOR						5 ^ 1			0101 ^ 0001	0100		 4
+<<			Zero fill left shift	5 << 1			0101 << 1	1010		 10
+>>			Signed right shift		5 >> 1			0101 >> 1	0010	 	 2
+>>>			Zero fill right shift	5 >>> 1			0101 >>> 1	0010	 	 2
+
+===>JavaScript DATA TYPES:--
+
+In programming, data types is an important concept.
+To be able to operate on variables, it is important to know something about the type.
+Without data types, a computer cannot safely solve this:
+
+1.premitive DataType(string,number,boolean,undefine,null)
+2.non premitive DataType(object,array,regex)
+
+===>JavaScript FUNCTIONS:--
+A JavaScript function is a block of code designed to perform a particular task.
+A JavaScript function is executed when "something" invokes it (calls it).
+
+=>Syntax;-
+
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+
+Example:-
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+=>Function RETURN;-
+
+let x = myFunction(4, 3);   // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+  return a * b;             // Function returns the product of a and b
+}
+
+===>JavaScript OBJECTS,PROPERTIES AND METHODS:--
+
+Real Life Objects, Properties, and Methods
+In real life, a car is an object.
+
+A car has properties like weight and color, and methods like start and stop:
+All cars have the same properties, but the property values differ from car to car.
+All cars have the same methods, but the methods are performed at different times.
+
+===>JavaScript OBJECTS:-
+
+You have learned that JavaScript variables are containers for data values.
+This code assigns a simple value  to a variable named car:
+
+Example:-const car = {type:"Fiat", model:"500", color:"white"};
+
+=>ACCESSING OBJECT     PROPERTIES:-(JavaScript objects are containers for named values called properties.)
+
+You can access object properties in two ways:
+1.objectName.propertyName
+ex:-person.lastName;
+2.objectName["propertyName"]
+ex:-person["lastName"];
+
+===>OBJECT METHODS:-(A method is a function stored as a property.)
+
+Objects can also have methods.
+Methods are actions that can be performed on objects.
+Methods are stored in properties as function definitions.
+
+Example:-
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+=>ACCESSING OBJECT METHODS:-
+
+1.objectName.methodName()
+ex:-name = person.fullName();
+    name = person.fullName;
+	
+	(Do Not Declare Strings, Numbers, and Booleans as Objects!)
+	
+===>JavaScript EVENTS:--
+
+HTML events are "things" that happen to HTML elements.
+When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+
+1.An HTML web page has finished loading
+2.An HTML input field was changed
+3.An HTML button was clicked
+
+Event				Description
+
+onchange			An HTML element has been changed
+onclick				The user clicks an HTML element
+onmouseover		   
+
+
+	The user moves the mouse over an HTML element
+onmouseout			The user moves the mouse away from an HTML element
+onkeydown			The user pushes a keyboard key
+onload				The browser has finished loading the page
+
+
+===>JavaScript STRINGS:--(A JavaScript string is zero or more characters written inside quotes.)
+
+JavaScript strings are for storing and manipulating text.
+
+=>STRING LENGTH:-
+
+To find the length of a string, use the built-in length property:
+Ex:-
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+(Comparing two JavaScript objects always returns false.)
+
+=>The STRING SLICE() METHOD:-
+
+slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: the start position, and the end position (end not included).
+This example slices out a portion of a string from position 7 to position 12 (13-1):
+
+Example:-
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str.slice(7,13); 
+
+OUTPUT:-Banana
+(substring() is similar to slice().)
+
+=>REPLACING STRING CONTENT:-
+
+The replace() method replaces a specified value with another value in a string:
+
+Example:-
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+
+=>CONVERTING TO UPPER AND LOWER CASE:-
+
+A string is converted to upper case with toUpperCase():
+A string is converted to lower case with toLowerCase():
+
+=>THE STRING CONCAT() METHOD:-
+
+concat() joins two or more strings
+
+Example:-
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);OUTPUT:-Hello World
+
+===>JavaScript STRING SEARCH:--
+
+JavaScript methods for searching strings:
+
+1.STRING INDEXOF()
+
+The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+
+Example
+let str = "Please locate where 'locate' occurs!";
+str.indexOf("locate");
+
+2.STRING LASTINDEXOF()
+The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+3.STRING STARTSWITH()
+4.STRING ENDSWITH()
+
+5.STRING SEARCH()
+The search() method searches a string for a specified value and returns the position of the match:
+
+Example
+let str = "Please locate where 'locate' occurs!";
+str.search("locate");
+
+
+===>JavaScript TEMPLATE LITERALS:--
+
+Synonyms:-
+
+1.TEMPLATE LITERALS(With template literals, you can use both single and double quotes inside a string)
+EX:-let text = `He's often called "Johnny"`;
+
+Template literals allow variables in strings:
+ex:-let firstName = "John";
+let lastName = "Doe";
+let text = `Welcome ${firstName}, ${lastName}!`
+
+2.TEMPLATE STRINGS
+
+3.STRING TEMPLATES
+
+4.BACK-TICS SYNTAX(Template Literals use back-ticks (``) rather than the quotes ("") to define a string)
+ex:-let text = `Hello World!`;
+
+===>JavaScript NUMBERS:--
+
+JavaScript has only one type of number. Numbers can be written with or without decimals.
+JavaScript uses the + operator for both addition and concatenation.
+Numbers are added. Strings are concatenated.
+The JavaScript interpreter works from left to right.
+First 10 + 20 is added because x and y are both numbers.
+Then 30 + "30" is concatenated because z is a string.
+
+NaN - Not a Number:-
+NaN is a JavaScript reserved word indicating that a number is not a legal number.
+Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number).
+
+===>JavaScript NUMBER METHODS:--
+
+=>The TOSTRING() METHOD:-
+The toString() method returns a number as a string.
+All number methods can be used on any type of numbers (literals, variables, or expressions):
+
+Example:-
+let x = 123;
+x.toString();
+(123).toString();
+(100 + 23).toString();
+
+=>The TOFIXED() METHOD:-
+toFixed() returns a string, with the number written with a specified number of decimals:
+
+Example:-
+let x = 9.656;
+x.toFixed(0);
+x.toFixed(2);
+x.toFixed(4);
+x.toFixed(6);
+
+=>CONVERTING VARIABLES TO NUMBERS:--
+
+=>THE NUMBER() METHOD:-
+Number() can be used to convert JavaScript variables to numbers:
+
+Example:-
+Number(true);
+Number(false);
+Number("10");
+Number("  10");
+Number("10  ");
+Number(" 10  ");
+Number("10.33");
+Number("10,33");
+Number("10 33");
+Number("John");
+
+=>The NUMBER() METHOD USED ON DATES:-
+Number() can also convert a date to a number.
+
+Example:-
+Number(new Date("1970-01-01"))
+
+=>The PARSEINT() METHOD:-
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+
+Example:-
+parseInt("-10");
+parseInt("-10.33");
+parseInt("10");
+parseInt("10.33");
+parseInt("10 20 30");
+parseInt("10 years");
+parseInt("years 10");
+
+=>JavaScript MIN_VALUE and MAX_VALUE:-
+
+=>MAX_VALUE returns the largest possible number in JavaScript.
+Example:-
+let x = Number.MAX_VALUE;
+
+=>MIN_VALUE returns the lowest possible number in JavaScript.
+Example:-
+let x = Number.MIN_VALUE;
+
+
+=>The PARSEFLOAT() METHOD:-
+parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+
+Example:-
+parseFloat("10");
+parseFloat("10.33");
+parseFloat("10 20 30");
+parseFloat("10 years");
+parseFloat("years 10");
+
+===>JavaScript ARRAYS:--
+
+An array is a special variable, which can hold more than one value:
+
+Ex:-const cars = ["Saab", "Volvo", "BMW"];
+It is a common practice to declare arrays with the const keyword.
+
+The following example also creates an Array, and assigns values to it:
+Example;_
+const cars = new Array("Saab", "Volvo", "BMW");
+
+=>Accessing ARRAY ELEMENTS:-
+You access an array element by referring to the index number:
+Example:-
+const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];
+
+=>Access the FULL ARRAY:-
+With JavaScript, the full array can be accessed by referring to the array name:
+Example:-
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+
+=>Looping ARRAY ELEMENTS:-
+One way to loop through an array, is using a for loop:
+
+1.Example
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+You can also use the Array.forEach() function:
+
+2.Example:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+}
+
+=>ADDING ARRAY ELEMENTS:-
+The easiest way to add a new element to an array is using the push() method:
+
+1.Example:-
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+
+2.Example:-
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Arrays</h2>
+<p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits;
+function myFunction() {
+  fruits[fruits.length] = "Lemon";
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+</body>
+</html>
+
+=>REMOVING LAST ARRAY ELEMENTS:-
+Popping
+The pop() method removes the last element from an array:
+
+Example:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();
+
+=>REMOVING FIRST ARRAY ELEMENTS:-
+Shifting Elements
+Shifting is equivalent to popping, working on the first element instead of the last.
+
+The shift() method removes the first array element and "shifts" all other elements to a lower index.
+
+Example:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+
+=>CHANGING ARRAY ELEMENTS:-
+Array elements are accessed using their index number:
+
+Array indexes start with 0:
+
+[0] is the first array element
+[1] is the second
+[2] is the third ...
+
+Example:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[0] = "Kiwi";
+
+=>DELETING PERTICULAR ARRAY ELEMENTS:-
+Example:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];
+
+=>USING SPLICE() TO REMOVE ELEMENTS:-
+With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array:
+
+Example:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);
+
+=>MERGING (CONCATENATING) ARRAYS:-
+The concat() method creates a new array by merging (concatenating) existing arrays:
+
+1.Example:- (Merging Two Arrays)
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+
+2.Example:- (Merging Three Arrays)
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myChildren = arr1.concat(arr2, arr3);
+
+3.Example:- (Merging an Array with Values)
+const arr1 = ["Emil", "Tobias", "Linus"];
+const myChildren = arr1.concat("Peter"); 
+
+=>SLICING AN ARRAY:-
+The slice() method slices out a piece of an array into a new array.
+
+This example slices out a part of an array starting from array element 1 ("Orange"):
+
+Example
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
+
+(When to Use Arrays. When to use Objects.
+JavaScript does not support associative arrays.
+You should use objects when you want the element names to be strings (text).
+You should use arrays when you want the element names to be numbers.)
+
+===>JavaScript SORTING ARRAYS:--
+=>SORTING AN ARRAY:-
+The sort() method sorts an array alphabetically:
+
+Example:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+
+=>REVERSING AN ARRAY:-
+The reverse() method reverses the elements in an array.
+You can use it to sort an array in descending order:
+
+Example:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+fruits.reverse();
+
+=>NUMERIC SORT:-
+By default, the sort() function sorts values as strings.
+This works well for strings ("Apple" comes before "Banana").
+However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+Because of this, the sort() method will produce incorrect result when sorting numbers.
+You can fix this by providing a compare function:
+
+1.Example:-(Asending Order)
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+
+2.Example:-(Descending Order)
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b - a});
+
+=>SORTING OBJECT ARRAYS:-
+JavaScript arrays often contain objects:
+
+Example
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+cars.sort(function(a, b){return a.year - b.year});
+
+===>JavaScript ARRAY ITERATION:--
+Array iteration methods operate on every array item.
+Example:-
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+numbers.forEach(myFunction);
+function myFunction(value, index, array) {
+  txt += value + "<br>";
+}
+
+=>The ARRAY MAP() METHOD:-
+
+The map() method creates a new array by performing a function on each array element.
+The map() method does not execute the function for array elements without values.
+The map() method does not change the original array.
+
+Example:-
+
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+document.getElementById("demo").innerHTML = numbers2;
+function myFunction(value, index, array) {
+  return value * 2;
+}
+
+
+=>The ARRAY FILTER() METHOD:-
+The filter() method creates a new array with array elements that passes a test.
+This example creates a new array from elements with a value larger than 18:
+
+Example:-
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+===>JavaScript DATE OBJECTS:--
+
+=>JavaScript GET DATE METHODS:-
+
+These methods can be used for getting information from a date object:
+
+Method	     		Description
+
+getFullYear()		Get the year as a four digit number (yyyy)
+getMonth()			Get the month as a number (0-11)
+getDate()			Get the day as a number (1-31)
+getHours()			Get the hour (0-23)
+getMinutes()		Get the minute (0-59)
+getSeconds()		Get the second (0-59)
+getMilliseconds()	Get the millisecond (0-999)
+getTime()			Get the time (milliseconds since January 1, 1970)
+getDay()			Get the weekday as a number (0-6)
+Date.now()			Get the time. ECMAScript 5.
+
+=>JavaScript SET DATE METHODS:-
+
+Set Date methods let you set date values (years, months, days, hours, minutes, seconds, milliseconds) for a Date Object.
+Set Date methods are used for setting a part of a date:
+
+Method				Description
+
+setDate()			Set the day as a number (1-31)
+setFullYear()		Set the year (optionally month and day)
+setHours()			Set the hour (0-23)
+setMilliseconds()	Set the milliseconds (0-999)
+setMinutes()		Set the minutes (0-59)
+setMonth()			Set the month (0-11)
+setSeconds()		Set the seconds (0-59)
+setTime()			Set the time (milliseconds since January 1, 1970)
+
+
+===>JavaScript MATH OBJECT:--
+
+The JavaScript Math object allows you to perform mathematical tasks on numbers.
+
+JavaScriptb Math Methods
+
+Method						Description
+
+abs(x)						Returns the absolute value of x
+acos(x)						Returns the arccosine of x, in radians
+acosh(x)					Returns the hyperbolic arccosine of x
+asin(x)						Returns the arcsine of x, in radians
+asinh(x)					Returns the hyperbolic arcsine of x
+atan(x)						Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+atan2(y, x)					Returns the arctangent of the quotient of its arguments
+atanh(x)					Returns the hyperbolic arctangent of x
+cbrt(x)						Returns the cubic root of x
+ceil(x)						Returns x, rounded upwards to the nearest integer
+cos(x)						Returns the cosine of x (x is in radians)
+cosh(x)						Returns the hyperbolic cosine of x
+exp(x)						Returns the value of Ex
+floor(x)					Returns x, rounded downwards to the nearest integer
+log(x)						Returns the natural logarithm (base E) of x
+max(x, y, z, ..., n)		Returns the number with the highest value
+min(x, y, z, ..., n)		Returns the number with the lowest value
+pow(x, y)					Returns the value of x to the power of y
+random()					Returns a random number between 0 and 1
+round(x)					Rounds x to the nearest integer
+sign(x)						Returns if x is negative, null or positive (-1, 0, 1)
+sin(x)						Returns the sine of x (x is in radians)
+sinh(x)						Returns the hyperbolic sine of x
+sqrt(x)						Returns the square root of x
+tan(x)						Returns the tangent of an angle
+tanh(x)						Returns the hyperbolic tangent of a number
+trunc(x)					Returns the integer part of a number (x)
+
+===>JavaScript BOOLEANS:--
+A JavaScript Boolean represents one of two values: true or false.
+
+=>BOOLEAN VALUES:-
+Very often, in programming, you will need a data type that can only have one of two values, like
+YES / NO
+ON / OFF
+TRUE / FALSE
+For this, JavaScript has a Boolean data type. It can only take the values true or false.
+
+=>COMPARISONS AND CONDITIONS:-
+The chapter JS Comparisons gives a full overview of comparison operators.
+The chapter JS Conditions gives a full overview of conditional statements.
+Here are some examples:
+
+Operator	Description		Example
+
+==			equal to		if (day == "Monday")
+>			greater than	if (salary > 9000)
+<			less than		if (age < 18)
+
+
+===>JavaScript IF ELSE AND ELSE IF:--
+
+Conditional statements are used to perform different actions based on different conditions.
+
+In JavaScript we have the following conditional statements:
+
+1.Use if to specify a block of code to be executed, IF A SPECIFIED CONDITION IS TRUE
+
+Syntax:-Syntax
+if (condition) {
+  //  block of code to be executed if the condition is true
+}
+
+Example:-if (hour < 18) {
+  greeting = "Good day";
+}
+
+2.Use else to specify a block of code to be executed, IF THE SAME CONDITION IS FALSE
+
+Syntax:-Syntax
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+
+Example:-if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+3.Use else if to specify a new condition to test, if the first condition is false
+
+Syntax:-Syntax
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+
+Example:-if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+4.Use SWITCH to specify many alternative blocks of code to be executed
+
+The switch statement is used to perform different actions based on different conditions.
+
+Syntax:-
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+Example:-
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+
+
+===>JavaScript LOOP:-
+
+Loops can execute a block of code a number of times.
+Loops are handy, if you want to run the same code over and over again, each time with a different value.
+Often this is the case when working with arrays:
+
+JavaScript supports different kinds of loops:
+
+1.for - loops through a block of code a number of times
+2.for/in - loops through the properties of an object
+3.for/of - loops through the values of an iterable object
+4.while - loops through a block of code while a specified condition is true
+5.do/while - also loops through a block of code while a specified condition is true
+
+=>FOR LOOP:-
+
+syntax:-
+
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+Statement 1 is executed (one time) before the execution of the code block.
+
+Statement 2 defines the condition for executing the code block.
+
+Statement 3 is executed (every time) after the code block has been executed.
+
+Example:-
+
+let text = "";
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+or
+
+for (let i = 0, len = cars.length, text = ""; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+
+=>FOR IN LOOP:-
+
+
+=>FOR IN OVER OBJECT:-
+The JavaScript for in statement loops through the properties of an Object:
+
+*.The for in loop iterates over a person object
+*.Each iteration returns a key (x)
+*.The key is used to access the value of the key
+*.The value of the key is person[x]
+
+Syntax:-
+for (key in object) {
+  // code block to be executed
+}
+Example:-
+const person = {fname:"John", lname:"Doe", age:25};
+let text = "";
+for (let x in person) {
+  text += person[x];
+}
+
+=>FOR IN OVER ARRAYS:-
+The JavaScript for in statement can also loop over the properties of an Array:
+
+Syntax:-
+for (variable in array) {
+  code
+}
+
+Example:_
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+for (let x in numbers) {
+  txt += numbers[x];
+}
+
+=> FOR OF:-
+
+The JavaScript for of statement loops through the values of an iterable object.
+It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+
+Syntax:-
+for (variable of iterable) {
+  // code block to be executed
+}
+variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+iterable - An object that has iterable properties.
+
+=>WHILE LOOP:-
+The while loop loops through a block of code as long as a specified condition is true.
+
+Syntax:-
+while (condition) {
+  // code block to be executed
+}
+
+Example:-
+while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}
+(If you forget to increase the variable used in the condition, the loop will never end. This will crash your browser)
+
+=>DO WHILE LOOP:-
+The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true,
+then it will repeat the loop as long as the condition is true.
+
+Syntax:-
+do {
+  // code block to be executed
+}
+while (condition);
+
+Example:-
+The example below uses a do while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:
+
+do {
+  text += "The number is " + i;
+  i++;
+}
+while (i < 10);
+
+
+===>JavaScript BREAK AND CONTINUE:-
+The break statement "jumps out" of a loop.
+The continue statement "jumps over" one iteration in the loop.
+
+=>The BREAK STATEMENT:-
+You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch() statement.
+The break statement can also be used to jump out of a loop:
+
+Example:-
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+=>The CONTINUE STATEMENT:-
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+This example skips the value of 3:
+
+Example:-
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+
+
+===>JavaScript MAPS:--
+A Map holds key-value pairs where the keys can be any datatype.
+A Map remembers the original insertion order of the keys.
+
+Method			Description
+
+new Map()		Creates a new Map
+set()			Sets the value for a key in a Map
+get()			Gets the value for a key in a Map
+delete()		Removes a Map element specified by the key
+has()			Returns true if a key exists in a Map
+forEach()		Calls a function for each key/value pair in a Map
+entries()		Returns an iterator with the [key, value] pairs in a Map
+
+Property		Description
+
+size			Returns the number of elements in a Map
+
+
+=>The SET() METHOD:-
+You can add elements to a Map with the set() method:
+
+Example:-
+// Create a Map
+const fruits = new Map();
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+document.getElementById("demo").innerHTML = fruits.get("apples");
+
+=>The GET() METHOD:-
+The get() method gets the value of a key in a Map:
+
+Example:-
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+
+=>The SIZE PROPERTY:-
+The size property returns the number of elements in a Map:
+
+Example:-
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+document.getElementById("demo").innerHTML = fruits.size;
+
+=>The DELETE() METHOD:-
+The delete() method removes a Map element:
+
+Example:-
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+// Delete an Element
+fruits.delete("apples");
+document.getElementById("demo").innerHTML = fruits.size;
+
+=>The HAS() METHOD:-
+The has() method returns true if a key exists in a Map:
+
+Example:-
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+// Delete an Element
+fruits.delete("apples");
+document.getElementById("demo").innerHTML = fruits.has("apples");
+
+===>The TYPEOF OPERATOR:--
+You can use the typeof operator to find the data type of a JavaScript variable.
+
+Example:-
+
+typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'John', age:34}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myCar                  // Returns "undefined" *
+typeof null                   // Returns "object"
+
+===>JavaScript TYPE CONVERSION:--
+
+1.Converting STRINGS TO NUMBERS
+The global method Number() can convert strings to numbers.
+Strings containing numbers (like "3.14") convert to numbers (like 3.14).
+Empty strings convert to 0.
+Anything else converts to NaN (Not a Number).
+
+Example:-
+Number("3.14")    // returns 3.14
+Number(" ")       // returns 0
+Number("")        // returns 0
+Number("99 88")   // returns NaN
+
+2.Converting NUMBERS TO STRINGS
+The global method String() can convert numbers to strings.
+It can be used on any type of numbers, literals, variables, or expressions:
+
+Example:-
+String(x)         // returns a string from a number variable x
+String(123)       // returns a string from a number literal 123
+String(100 + 23)  // returns a string from a number from an expression
+or
+let x = 123;
+document.getElementById("demo").innerHTML =
+  x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
+
+3.Converting DATES TO NUMBERS
+The global method Number() can be used to convert dates to numbers.
+
+Example:-
+d = new Date();
+Number(d)          // returns 1404568027739
+
+Example:-
+The date method getTime() does the same.
+d = new Date();
+d.getTime()        // returns 1404568027739
+
+4.Converting DATES  TO STRINGS
+The global method String() can convert dates to strings.
+
+Example:-
+String(Date())  // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)"
+The Date method toString() does the same.
+
+Example:-
+Date().toString()  // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)"
+
+5.Converting BOOLEANS TO NUMBERS
+
+6.Converting NUMBERS TO BOOLEANS
+
+===>JavaScript REGULAR EXPRESSIONS:--
+A regular expression is a sequence of characters that forms a search pattern.
+The search pattern can be used for text search and text replace operations.
+When you search for data in a text, you can use this search pattern to describe what you are searching for.
+A regular expression can be a single character, or a more complicated pattern.
+Regular expressions can be used to perform all types of text search and text replace operations.
+
+===>JavaScript ERRORS - THROW AND TRY TO CATCH:--
+The try statement lets you test a block of code for errors.
+The catch statement lets you handle the error.
+The throw statement lets you create custom errors.
+The finally statement lets you execute code, after try and catch, regardless of the result.
+
+Example:-(try and catch)
+try {
+  Block of code to try
+}
+catch(err) {
+  Block of code to handle errors
+}
+
+Example:-(try, catch and Finally)
+try {
+  Block of code to try
+}
+catch(err) {
+  Block of code to handle errors
+}
+finally {
+  Block of code to be executed regardless of the try / catch result
+}
+
+===>JavaScript SCOPE:--
+Scope determines the accessibility (visibility) of variables.
+
+JavaScript has 3 types of scope:
+
+1.BLOCK SCOPE
+Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+ES6 introduced two important new JavaScript keywords: let and const.
+These two keywords provide Block Scope in JavaScript.
+Variables declared inside a { } block cannot be accessed from outside the block:
+
+Example:-
+{
+  let x = 2;
+}
+// x can NOT be used here
+
+2.FUNCTION SCOPE
+JavaScript has function scope: Each function creates a new scope.
+Variables defined inside a function are not accessible (visible) from outside the function.
+Variables declared with var, let and const are quite similar when declared inside a function.
+
+Example:-
+function myFunction() {
+  var/let/const carName = "Volvo";   // Function Scope
+}
+
+
+3.GLOBAL SCOPE
+A global variable has Global Scope:
+A variable declared outside a function, becomes GLOBAL.
+All scripts and functions on a web page can access it.
+
+Example:-
+let carName = "Volvo";
+// code here can use carName
+function myFunction() {
+// code here can also use carName
+
+===>JavaScript HOISTING:--
+Hoisting is JavaScript's default behavior of moving declarations to the top.
+
+=>JavaScript Declarations are Hoisted:-
+In JavaScript, a variable can be declared after it has been used.
+In other words; a variable can be used before it has been declared.
+
+Example 1:-
+x = 5; // Assign 5 to x
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x;                     // Display x in the element
+var x; // Declare x
+Example 2:-
+var x; // Declare x
+x = 5; // Assign 5 to x
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x;        
+
+=>JavaScript Initializations are Not Hoisted:-
+JavaScript only hoists declarations, not initializations.
+
+Example 1:-
+var x = 5; // Initialize x
+var y = 7; // Initialize y
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x + " " + y;           // Display x and y
+Example 2:-
+var x = 5; // Initialize x
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x + " " + y;           // Display x and y
+var y = 7; // Initialize y
+
+==>The JavaScript THIS KEYWORD:-
+
+The JavaScript this keyword refers to the object it belongs to.
+
+It has different values depending on where it is used:
+
+*.In a method, this refers to the owner object.
+*.Alone, this refers to the global object.
+*.In a function, this refers to the global object.
+*.In a function, in strict mode, this is undefined.
+*.In an event, this refers to the element that received the event.
+*.Methods like call(), and apply() can refer this to any object.
+
+===>JavaScript ARROW FUNCTION:--
+
+Arrow functions were introduced in ES6.
+Arrow functions allow us to write shorter function syntax:
+
+Syntax:-
+let myFunction = (a, b) => a * b;
+
+Without Before:-
+hello = function() {
+  return "Hello World!";
+}
+
+With Arrow Function:-
+hello = () => {
+  return "Hello World!";
+}
+
+Arrow Functions Return Value by Default:
+hello = () => "Hello World!";
+
+Arrow Function With Parameters:
+hello = (val) => "Hello " + val;
+
+Arrow Function Without Parentheses:
+hello = val => "Hello " + val;
+
+===>JavaScript CLASSES:--
+
+ECMAScript 2015, also known as ES6, introduced JavaScript Classes.
+JavaScript Classes are templates for JavaScript Objects.
+JavaScript Class Syntax
+Use the keyword class to create a class.
+Always add a method named constructor():
+
+Syntax:-
+class ClassName {
+  constructor() { ... }
+}
+Example:-
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+===>JavaScript JSON:--
+JSON is a format for storing and transporting data.
+JSON is often used when data is sent from a server to a web page.
+
+What is JSON?
+*.JSON stands for JavaScript Object Notation
+*.JSON is a lightweight data interchange format
+*.JSON is language independent *
+*.JSON is "self-describing" and easy to understand
+
+JSON Example:-
+{
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+}
+
+=>JSON Data - A Name and a Value:-
+JSON data is written as name/value pairs, just like JavaScript object properties.
+A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:
+
+Example:-
+"firstName":"John"
+
+=>JSON Objects:-
+JSON objects are written inside curly braces.
+Just like in JavaScript, objects can contain multiple name/value pairs:
+
+Example:-
+{"firstName":"John", "lastName":"Doe"}
+
+=>JSON Arrays:-
+JSON arrays are written inside square brackets.
+Just like in JavaScript, an array can contain objects:
+
+Example:-
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+
+=>Converting a JSON Text to a JavaScript Object:-
+JSON Text:-
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+Convert to JavaScript Object:-
+const obj = JSON.parse(text);
+
+===>JavaScript Debugging:--
+Errors can (will) happen, every time you write some new computer code.
+
+=>Code Debugging:-
+Programming code might contain syntax errors, or logical errors.
+Many of these errors are difficult to diagnose.
+Often, when programming code contains errors, nothing will happen. There are no error messages, and you will get no indications where to search for errors.
+Searching for (and fixing) errors in programming code is called code debugging.
+
+1.console.log() Method
+2.debugger Keyword
+
+
+===>JavaScript BEST PRACTICES:--
+
+Avoid global variables, avoid new, avoid ==, avoid eval()
+Avoid Global Variables
+Always Declare Local Variables
+Declarations on Top
+Initialize Variables
+Declare Objects with const
+Declare Arrays with const
+Beware of Automatic Type Conversions
+Use === Comparison
+Use Parameter Defaults
+End Your Switches with Defaults
+Avoid Number, String, and Boolean as Objects
+Avoid Using eval()
+
+=>Don't Use new Object():-
+
+Use "" instead of new String()
+Use 0 instead of new Number()
+Use false instead of new Boolean()
+Use {} instead of new Object()
+Use [] instead of new Array()
+Use /()/ instead of new RegExp()
+Use function (){} instead of new Function()
+
+
+===>JavaScript RESERVED WORDS:--
+
+abstract	arguments	await*	boolean
+break	byte	case	catch
+char	class*	const	continue
+debugger	default	delete	do
+double	else	enum*	eval
+export*	extends*	false	final
+finally	float	for	function
+goto	if	implements	import*
+in	instanceof	int	interface
+let*	long	native	new
+null	package	private	protected
+public	return	short	static
+super*	switch	synchronized	this
+throw	throws	transient	true
+try	typeof	var	void
+volatile	while	with	yield
+
+
+Scope. Scope means variable access. ...
+ans=>Block scope
+Function scope
+Global scope
+IIFE (Immediately Invoked Function Expression)
+ans=> As the name suggests IIFE is a function in javascript which immediately invoked and executed as soon as it is defined. ...
+Hoisting. ...
+ans=>In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. Basically,
+ it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
+Closures. ...
+ans=>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+ In other words, a closure gives you access to an outer function's scope from an inner function
+Callbacks. ...
+ans=>a function passed into another function as an argument to be executed later. ... When you pass a callback function into another function,
+ you just pass the reference of the function i.e., the function name without the parentheses () .
+Promises. ...
+ans=>Promises are a way to implement async programming in JavaScript(ES6). A Promise will become a container for future value.
+ Like if you order any food on any site to deliver it to your place that order record will be the promise and the food will be the value of that promise
+Async & Await.
+ans=>1. The word “async” before a function means one simple thing: a function always returns a promise.
+ 2. The keyword "await" makes JavaScript wait until that promise settles and returns its result.
